@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <br>
+  <button onclick="p2()"><h1><</h1></button>
+   <img src="Без%20названия%20(6).jpg" id="2">
+   <button  onclick="p1()"><h1>></h1></button>
+</center>
+  <script>
+      score=1
+      function p1 () {
+          score++
+
+      if (score>3){
+        score=1
+      }
+
+      if (score===1){
+          document.getElementById('2').src = "Без%20названия%20(6).jpg"
+      }
+      if (score===2){
+           document.getElementById('2').src = "Без%20названия%20(7).jpg"
+      }
+      if (score===3){
+           document.getElementById('2').src = "Без%20названия%20(5).jpg"
+      }
+      }
+      function p2 () {
+          score--
+         if (score<1){
+        score=3
+      }
+
+      if (score===1){
+          document.getElementById('2').src = "Без%20названия%20(6).jpg"
+      }
+      if (score===2){
+           document.getElementById('2').src = "Без%20названия%20(7).jpg"
+      }
+      if (score===3){
+           document.getElementById('2').src = "Без%20названия%20(5).jpg"
+      }
+      }
+
+
+</script>
+
+
+
+</body>
+</html>
